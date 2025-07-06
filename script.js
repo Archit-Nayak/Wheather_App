@@ -48,11 +48,9 @@ submit.addEventListener('click' , (e)=>{
   cityName.innerHTML = city.value.charAt(0).toUpperCase() + city.value.slice(1).toLowerCase();
   e.preventDefault()
   getCoordinates(city.value ,1)
+})
 
- const cities = [{id:"Shanghai"}, {id:"Boston"} ,{id:"Lucknow"} , {id:"Kolkata"}];
+const cities = [{id:"Shanghai"}, {id:"Boston"} ,{id:"Lucknow"} , {id:"Kolkata"}];
 cities.forEach(element => {
   getCoordinates(element.id,0)
 }); 
-
-})
-
